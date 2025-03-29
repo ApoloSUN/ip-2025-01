@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var N int
+
+	fmt.Println("Digite um número:")
+	fmt.Scanln(N)
+
+	if (20 <= N) && (90 >= N) {
+		fmt.Println("O número", N, "está entre 20 e 90")
+	} else {
+		fmt.Println("O número", N, "não está entre 20 e 90")
+
+	}
+}
