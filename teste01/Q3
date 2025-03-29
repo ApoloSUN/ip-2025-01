@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var N int = 1
+	var S int = 0
+
+	for N = 1; N <= 100; N = N + 1 {
+		fmt.Println(N)
+		S = S + N
+	}
+
+	fmt.Println(S)
+}
