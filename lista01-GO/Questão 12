@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		horas, valor, H3 int64
+	)
+
+	fmt.Println("Digite a quantidades de horas em que o veículo foi utilizado: ")
+	fmt.Scanln(horas)
+
+	H3 = horas / 3
+
+	if horas%3 == 0 {
+		valor = 10 * H3
+
+	} else if horas%3 == 2 {
+		valor = (10 * H3) + 10
+	} else {
+		valor = 10*H3 + 5
+	}
+
+	fmt.Print("O VALOR A PAGAR E = ", valor, "\n")
+
+}
