@@ -1,0 +1,39 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		conta      int64
+		consumo    float64
+		valorconta float64
+		tipo       string
+	)
+
+	fmt.Println("Digite o número da conta, o consumo e o tipo de consumidor: ")
+	fmt.Scanln(conta)
+	fmt.Scanln(consumo)
+	fmt.Scanln(tipo)
+
+	valorconta = 0
+
+	if tipo == "R" {
+		valorconta = 5.00 + 0.05*consumo
+
+	} else if tipo == "C" {
+		if consumo <= 80 {
+			valorconta = 500.00
+		} else {
+			valorconta = 500.00 + 0.25*(consumo-80)
+		}
+	} else if tipo == "I" {
+		if consumo <= 100 {
+			valorconta = 800.00
+		} else {
+			valorconta = 800.00 + 0.04*(consumo-100)
+		}
+	}
+
+	fmt.Print("CONTA = ", conta, "\n")
+	fmt.Print("VALOR DA CONTA = ", valorconta, "\n")
+}
