@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		n int64 = 2
+		i int64
+		f float64
+		c float64
+	)
+
+	fmt.Println("Digite o números de temperaturas: ")
+	fmt.Scanln(n)
+
+	for i = 1; i <= n; i = i + 1 {
+		fmt.Println("Digite um valor de temperatura em fahrenheit: ")
+		fmt.Scanln(f)
+
+		c = 5 * (f - 32) / 9
+		fmt.Print(f, " FAHRENHEIT EQUIVALE A ", c, " CELSIUS\n")
+	}
+}
