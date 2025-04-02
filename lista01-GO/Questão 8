@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		r, h, area, custo, pi float64
+	)
+
+	pi = 3.14159
+
+	fmt.Println("Digite o valor do raio e da altura da lata:")
+	fmt.Scanln(r)
+	fmt.Scanln(h)
+
+	area = (2 * pi * (r * r)) + (2 * pi * r * h)
+
+	custo = area * 100.00
+
+	fmt.Print("O VALOR DO CUSTO E = ", custo, "\n")
+
+}
