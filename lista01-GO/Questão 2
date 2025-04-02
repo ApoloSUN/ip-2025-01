@@ -1,0 +1,42 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		T     float64
+		i     float64
+		Pe    float64
+		valor float64
+		P     float64
+		G     float64
+		A     float64
+		C     float64
+	)
+
+	fmt.Println("Digite o número de casos testes: ")
+	fmt.Scanln(T)
+
+	for i = 0; i <= T; i = i + 1 {
+		fmt.Println("Digite o número de pessoas: ")
+		fmt.Scanln(Pe)
+
+		fmt.Println("Digite a percentagem comprados na categoria popular: ")
+		fmt.Scanln(P)
+
+		fmt.Println("Digite a percentagem comprados na categoria geral: ")
+		fmt.Scanln(G)
+
+		fmt.Println("Digite a percentagem comprados na categoria arquibancada: ")
+		fmt.Scanln(A)
+
+		fmt.Println("Digite a percentagem comprados na categoria cadeiras: ")
+		fmt.Scanln(C)
+
+		valor = ((Pe * P) * 1) + ((Pe * G) * 5) + ((Pe * A) * 10) + ((Pe * C) * 20)
+
+		fmt.Println("A RENDA DO JOGO N. ", i, "E = ", valor)
+
+	}
+
+}
