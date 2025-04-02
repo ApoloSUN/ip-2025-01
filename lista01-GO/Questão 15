@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		N, i, Q float64
+	)
+
+	fmt.Println("Digite um valor maior que 5 e menor que 2000: ")
+	fmt.Scanln(N)
+
+	for i = 2; i <= N; i = i + 2 {
+		Q = i * i
+		fmt.Print(i, "^2 = ", Q, "\n")
+	}
+}
