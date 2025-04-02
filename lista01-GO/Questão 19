@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		soma, n, i float64
+	)
+
+	fmt.Println("Digite um número: ")
+	fmt.Scanln(n)
+
+	if n <= 1 {
+		fmt.Print("Numero invalido!\n")
+
+	} else {
+		soma = 0
+		for i = 1; i <= n; i = i + 1 {
+			soma = soma + (1 / i)
+		}
+	}
+
+	fmt.Print(soma)
+}
