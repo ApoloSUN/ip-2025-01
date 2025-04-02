@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		n1       int64
+		n2       int64
+		n3       int64
+		numero   int64
+		quadrado int64
+	)
+
+	fmt.Println("Digite três números: ")
+	fmt.Scanln(n1)
+	fmt.Scanln(n2)
+	fmt.Scanln(n3)
+
+	if (n1 < 0 || n1 > 9) || (n2 < 0 || n2 > 9) || (n3 < 0 || n3 > 9) {
+		fmt.Println("DIGITO INVALIDO")
+	} else {
+		numero = n1*100 + n2*10 + n3
+		quadrado = numero * numero
+		fmt.Println(numero, ", ", quadrado)
+	}
+
+}
