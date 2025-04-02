@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		nota float64
+	)
+
+	fmt.Println("Digite a nota: ")
+	fmt.Scanln(nota)
+
+	if nota >= 9.0 && nota <= 10.00 {
+		fmt.Print("NOTA = ", nota, " CONCEITO = A", "\n")
+
+	} else if nota >= 7.5 && nota < 9.0 {
+		fmt.Print("NOTA = ", nota, " CONCEITO = B", "\n")
+
+	} else if nota >= 6.0 && nota < 7.5 {
+		fmt.Print("NOTA = ", nota, " CONCEITO = C", "\n")
+
+	} else if nota >= 0 && nota < 6.0 {
+		fmt.Print("NOTA = ", nota, " CONCEITO = D", "\n")
+	}
+
+}
