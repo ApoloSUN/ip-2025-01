@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		a, b, c, d, determinante float64
+	)
+
+	fmt.Println("Digite os quatro elementos (A, B, C e D) da matriz: ")
+	fmt.Scanln(a)
+	fmt.Scanln(b)
+	fmt.Scanln(c)
+	fmt.Scanln(d)
+
+	determinante = a*d - b*c
+
+	fmt.Print("O VALOR DO DETERMINANTE E = ", determinante, "\n")
+
+}
