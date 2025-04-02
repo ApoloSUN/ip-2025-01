@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		N1    float64
+		N2    float64
+		N3    float64
+		media float64
+	)
+
+	fmt.Println("Digite três notas: ")
+	fmt.Scanln(N1)
+	fmt.Scanln(N2)
+	fmt.Scanln(N3)
+
+	media = (N1 + N2 + N3) / 3
+
+	if media >= 6 {
+		fmt.Println("MEDIA: ", media)
+		fmt.Println("APROVADO")
+	} else {
+		fmt.Println("MEDIA: ", media)
+		fmt.Println("REPROVADO")
+	}
+
+}
