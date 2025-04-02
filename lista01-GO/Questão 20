@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		horas, minutos, segundos, TS int64
+	)
+
+	fmt.Println("Digite as horas: ")
+	fmt.Scanln(horas)
+
+	fmt.Println("Digite os minutos: ")
+	fmt.Scanln(minutos)
+
+	fmt.Println("Digite os segundos: ")
+	fmt.Scanln(segundos)
+
+	TS = (horas * 3600) + (minutos * 60) + segundos
+
+	fmt.Print("O TEMPO EM SEGUNDOS E = ", TS, "\n")
+
+}
