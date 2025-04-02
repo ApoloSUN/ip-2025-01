@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		a, b, c, delta float64
+	)
+
+	fmt.Println("Digite os valores dos coeficientes A, B e C: ")
+	fmt.Scanln(a)
+	fmt.Scanln(b)
+	fmt.Scanln(c)
+
+	delta = (b * b) - (4 * a * c)
+
+	fmt.Print("O VALOR DE DELTA E = ", delta, "\n")
+
+}
