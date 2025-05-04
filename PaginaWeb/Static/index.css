@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 3px solid #141111;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+button {
+    background-color: #f9fdfa;
+    color: rgb(15, 1, 1);
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: 40px;
+}
+
+.container {
+    width: 800px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #0a0909;
+    background-color: #90d5fd;
+    position: relative;
+}
+
+.contanto {
+    text-align: center;
+}
+
+.links {
+    padding-left: 0;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        position: static;
+        transform: none;
+        top: auto;
+        left: auto;
+        margin: 20px auto;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
